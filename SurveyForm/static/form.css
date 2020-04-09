@@ -1,0 +1,137 @@
+body {
+  background-color: #c7f0f2;
+  font-family: Helvetica, sans-sarif;
+  height: auto;
+}
+
+a.button {
+  font-size: small;
+  font-weight: 7;
+  padding: 15px;
+}
+
+hr {
+  border: 2px solid #000000;
+}
+
+input {
+  background-color: #DCDCDC;
+}
+
+textarea {
+  background-color: #DCDCDC;
+  min-height: 150px;
+  width: 100%;
+  border: 3px solid #000000
+}
+
+.container {
+  
+  border: 2px solid #000000;
+  height: auto;
+  margin: 2%;
+  padding: 5%;
+  background-color: #ffffff;
+}
+
+.input {
+  width: 65%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+#title {
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+}
+
+#survey-form {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
+    "na el nu dr"
+    "ra ra cb cb"
+    "ta ta ta ta"
+    
+}
+@media only screen and (max-width: 575px) {
+  #survey-form {
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "na" 
+    "el" 
+    "nu" 
+    "dr"
+    "ra" 
+    "ra" 
+    "cb" 
+    "cb"
+    "ta"
+    "su"      
+  }
+  body {
+    height: auto;
+  }
+}
+
+#name-label {
+  grid-area: na;
+  
+}
+#name {
+  
+}
+
+#email {
+  grid-area: el;
+  
+}
+
+#number {
+  grid-area: nu;
+  
+}
+ 
+#dropdown {
+  grid-area: dr;
+  
+}
+
+#radio {
+  grid-area: ra;
+  
+}
+
+#checkbox {
+  grid-area: cb;
+  
+}
+
+#emptybox {
+  grid-area: ta;
+}
+
+#submit {
+  
+  
+}
+#footer {
+ 
+  width: 100%;
+  height: 3em;
+  
+}
+
+button[type=submit] {
+    width: 6em;
+    height: 2.5em;
+    padding: .6em;
+    font: 12px;
+    text-align: center;
+    background-color: #3edb0b;
+    float: right;
+}

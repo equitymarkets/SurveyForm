@@ -1,0 +1,82 @@
+<!--DOCTYPE html-->
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link href="static/form.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <div class="container">
+    
+    <div>
+      <h1  id="title">Customer Survey Form</h1>
+    </div><!--end title id-->
+    
+    <div>
+      <p id="description">Please submit this survey form for free shipping on your next order of $100 or more:</p>
+    </div><!--end description id-->
+    
+    <form id="survey-form">
+      
+      <label id="name-label" ><p>Name: <input type="form" id="name" class="input" placeholder="Full Name" required=""></p>
+      </label><!--end name id-->
+      
+      <label id="email-label"><p>Email: <input id="email" type="email" required=True name="email" placeholder="youremail@abc.com" required="">
+        </p></input></label><!--end email id-->
+    
+      <label id="number-label"><p>Number: <input  id="number" type="number" min="1000000000" max="9999999999"name="phone" id="number-id" placeholder="10-digit id number"></p>
+      </label><!--end number id-->
+      
+      <div id="dropdown"><label for="status">Status:</label><select id="status">
+        <option value="current">Current Customer</option>
+        <option value="browser">Browser</option>
+        <option value="previous">Previous Customer</option>
+        <option value="supplier">Supplier</option>
+        </select>
+      </div><!--end dropdown id-->
+    
+      <div id="radio">
+        <p>I usually shop for:</p>
+        <label for="myself">
+          <input id="myself" type="radio" name="shopper_type" value="myself">Myself
+        </label>
+        <label for="family">
+          <input id="family" type="radio" name="shopper_type" value="family">Family
+        </label>
+        <label for="friends">
+          <input id="friends" type="radio" name="shopper_type" value="friends">Friends
+        </label>
+        <label for="donation">
+          <input id="donation" type="radio" name="shopper_type" value="donation">Donation
+        </label>
+      </div><!--end radio id-->  
+    
+      <div id="checkbox">
+        <p>I prefer to be contacted by:</p>
+        <label for="email"><input id="email" type="checkbox" name="contact_preference" value="email">Email
+        </label>
+        
+        <label for="facebook"><input id="facebook" type="checkbox" name="contact_preference" value=facebook>Facebook Messenger
+        </label>
+        
+        <label for="SMS"><input id="SMS" type="checkbox" name="contact_preference" value="SMS">SMS/Text Message
+        </label>
+        
+        <label for="mail"><input id="mail" type="checkbox" name="contact_preference" value="mail">Mail
+        </label>
+        
+      </div><!--end checkbox id-->
+      <div id="emptybox">
+        <p>Additional comments or concerns:</p>
+        <textarea></textarea>
+      </div><!--end emptybox id-->
+      
+      
+    </form><!--end survey-form id-->
+    <div id="footer">
+        <button id="submit" type="submit">Submit</button>
+    </div><!--end submit id-->
+  </div><!--end container class-->
+</body>
+</html>
